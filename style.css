@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+/* created a flex hedading that moves with the scroll of the page */
+nav,{
+    justify-content:flex-end;
+    display: flex;
+}
+
+nav, footer {
+    background-color: slategray;
+}
+
+.about-me, .projects {
+    display: flex;
+}

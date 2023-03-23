@@ -6,37 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Alexs-portfolio</title>
 </head>
 <body>
     <header>
         <hgroup>
-            <h1>Header</h1>
-            <h2>Subheader</h2>
+            <h1>Alex's Portfolio</h1>
         </hgroup>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Menu Option 1</a></li>
-            <li><a href="#">Menu Option 2</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#project-1">My Projets</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
         </ul>
     </nav>
     <section>
-        <article>
+        <article class ="about-me" id="about-me">
             <header>
-                <h1>Article #1</h1>
+                <h1>About Me</h1>
+                <h2>Alex Horning</h2>
+                <!--TODO create about me-->
+                <p>Create an about me</p>
             </header>
             <section>
-                This is the first article.
+                
             </section>
         </article>
-        <article>
+        <article class ="projects" id="project1">
             <header>
-                <h1>Article #2</h1>
+                <!-- link gitgub with an image of my project -->
+                <h1>This is my first project for the coding bootcamp where we created a </h1>
             </header>
             <section>
+                <figure>
+                    <img src="" alt="">
+                </figure>
                 This is the second article.
             </section>
+        </article>
+        <article class ="projects" id="project2">
+            <header>
+                <h1>Project 2: Chess Game</h1>
+            </header>
+            <section>
+                <figure>
+                    <img src="" alt="">
+                </figure>
+                This is the second article.
+            </section>
+        </article>
+        <article class ="contact-me" id="contact-me">
+            <header>
+                <h1>Contact Me</h1>
+                <input type="text" name="Name" id="Name">
+                <input type="text" name="Email" id="Email">
+                <input type="text" name="Message" id="Message">
+                <button>Submit</button>
+            </header>
         </article>
     </section>
     <aside>
@@ -47,12 +74,6 @@
                 <li><a href="#">Link 2</a></li>
             </ul>
         </section>
-        <figure>
-            <img width="85" height="85" 
-                src="http://domain.tld/path/to/image.jpg" 
-                alt="foobar" />
-            <figcaption>Foobar</figcaption>
-        </figure>
     </aside>
     <footer>Footer</footer>
 </body>
