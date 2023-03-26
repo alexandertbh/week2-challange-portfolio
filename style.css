@@ -1,16 +1,78 @@
-body {
-    background-color: lightblue;
-}
-/* created a flex hedading that moves with the scroll of the page */
-nav,{
-    justify-content:flex-end;
-    display: flex;
+/*
+TODO: Add developers name, photo, links to sections about them, their work, and contact information
+TODO: add links from nav to sections
+TODO: Add a card with the first application, the applications image should be larger in size that the others
+TODO: link the application to the deployed application
+TODO:Resize the page so that the it fits in different screens and devices */
+
+
+ :root{
+    --primary: slategrey;
+    --secondary:white;
+    --accent:black;
 }
 
-nav, footer {
-    background-color: slategray;
+
+header, section, article, aside, aside, footer {
+    border: 1px solid black;
+}
+
+
+/* created a flex hedading that moves with the scroll of the page */
+.header{
+    display:flex;
+    justify-content:flex-end;
+    padding: 20px 50px;
+    align-items: center;
+    box-shadow: 0 1px 8px var(--accent);
+    flex-wrap: wrap;
+    height: 15vh;
+}
+
+.header h1 {
+    margin-right: auto;
+}
+
+.header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 8px
+}
+
+.header, footer {
+    background-color: var(--primary);
 }
 
 .about-me, .projects {
     display: flex;
+    justify-content: center;
+}
+
+
+
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main{
+    min-height: 70vh;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    height: 15vh;
+
+}
+
+input {
+    display: inline;
+}
+
+.contact-me{
+    display:flex;
 }

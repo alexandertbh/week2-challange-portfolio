@@ -9,72 +9,78 @@
     <title>Alexs-portfolio</title>
 </head>
 <body>
-    <header>
-        <hgroup>
+    <header class="header">
             <h1>Alex's Portfolio</h1>
-        </hgroup>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#project-1">My Projets</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#project-1">My Projets</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
-    </nav>
-    <section>
-        <article class ="about-me" id="about-me">
-            <header>
-                <h1>About Me</h1>
+  <main>
+    <section class ="about-me" id="about-me">
                 <h2>Alex Horning</h2>
+                <h2>About me</h2>
                 <!--TODO create about me-->
-                <p>Create an about me</p>
-            </header>
-            <section>
-                
-            </section>
-        </article>
-        <article class ="projects" id="project1">
-            <header>
+                <p>Born and raised in Seattle I went to Central Washington University where I got my Bachelor's in Human Resource Management. I then started my career in recruiting where I recruited for accounting, sales, finance, and software engineering talent. Now I am looking to make a switch into a more technical role by learning coding. </p>
+    </section>  
+        <section class ="projects" id="project1">
                 <!-- link gitgub with an image of my project -->
-                <h1>This is my first project for the coding bootcamp where we created a </h1>
-            </header>
-            <section>
+                <h2>Project 1: </h2>
+                <p>This is my first project for the coding bootcamp where I took the code that used basic div and class sections and refactored the code to add semantic classes in the HTML as well as reducing redundant CSS code. </p>
                 <figure>
                     <img src="" alt="">
                 </figure>
-                This is the second article.
-            </section>
-        </article>
-        <article class ="projects" id="project2">
-            <header>
-                <h1>Project 2: Chess Game</h1>
-            </header>
-            <section>
+        </section>
+        <section class ="projects" id="project2">
+                <h1>Project 2: Rock, Paper, Scissors</h1>
+                <p>This was a game made by using Javascript in order to randomize the computer's responses and take the user's input to see who wins.</p>
                 <figure>
                     <img src="" alt="">
                 </figure>
-                This is the second article.
-            </section>
-        </article>
-        <article class ="contact-me" id="contact-me">
-            <header>
+        </section>
+        <section class ="contact-me" id="contact-me">
                 <h1>Contact Me</h1>
                 <input type="text" name="Name" id="Name">
                 <input type="text" name="Email" id="Email">
                 <input type="text" name="Message" id="Message">
                 <button>Submit</button>
-            </header>
-        </article>
-    </section>
-    <aside>
-        <section>
-            <h1>Links</h1>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-            </ul>
+
         </section>
+    <aside>
+    </main>
     </aside>
-    <footer>Footer</footer>
+    <footer>
+        <h3>Alex' Portfolio 2023</h3>
+    </footer>
 </body>
 </html>
+
+<!--Acceptance Criteria
+
+    GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to 
+
+sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+
+
+TODO: Add developers name, photo, links to sections about them, their work, and contact information
+TODO: add links from nav to sections
+TODO: Add a card with the first application, the applications image should be larger in size that the others
+TODO: link the application to the deployed application
+TODO:Resize the page so that the it fits in different screens and devices
+
+-->
