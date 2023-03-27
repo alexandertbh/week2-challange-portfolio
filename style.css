@@ -27,6 +27,7 @@ header, section, article, aside, aside, footer {
     box-shadow: 0 1px 8px var(--accent);
     flex-wrap: wrap;
     height: 15vh;
+    padding: 1rem;
 }
 
 .header h1 {
@@ -36,26 +37,49 @@ header, section, article, aside, aside, footer {
 .header li {
     list-style: none;
     display: inline-block;
-    padding: 0 8px
+    padding: 0 8px;
+    font-family: serif;
+    border: 1px solid var(--accent);
+    background-color:var(--secondary) ;
+    box-shadow: 1px 1px 1px 1px var(--accent);
 }
 
 .header, footer {
     background-color: var(--primary);
 }
 
+
+
 .about-me, .projects {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
+.about-me p {
+    padding-top: 20px;
+}
 
-
-section {
-    text-align: center;
+.sections {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap:1em;
+    width: 50%;
+}
+
+.projects {
+    margin: 10px;
+  }
+
+  .projects p{
+    padding-top: 20px;
+  }
+
+  .projects h2 {
+    padding-top: 20px;
+  }
+
+.about-me {
+    padding: 1rem;
 }
 
 main{
@@ -65,7 +89,17 @@ main{
 footer {
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
     height: 15vh;
+    padding: 20px;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    transition: box-shadow: 5s ;
+    padding: 20px;
 
 }
 
@@ -75,4 +109,30 @@ input {
 
 .contact-me{
     display:flex;
+    justify-content: flex-end;
+    justify-content: space-between;
 }
+
+/* 
+@media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .sections {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+
+
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .sections {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  } */
