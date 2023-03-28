@@ -7,15 +7,23 @@ TODO:Resize the page so that the it fits in different screens and devices */
 
 
  :root{
-    --primary: slategrey;
-    --secondary:white;
-    --accent:black;
+    --primary: #8D8741;
+    --secondary:#DAAD86;
+    --accent:#BC986A;
+    --background:#FBEEC1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 
-header, section, article, aside, aside, footer {
+/* header, section, article, aside, aside, footer {
     border: 1px solid black;
-}
+} */
 
 
 /* created a flex hedading that moves with the scroll of the page */
@@ -28,6 +36,7 @@ header, section, article, aside, aside, footer {
     flex-wrap: wrap;
     height: 15vh;
     padding: 1rem;
+    width: 100%;
 }
 
 .header h1 {
@@ -46,8 +55,8 @@ header, section, article, aside, aside, footer {
 
 .header, footer {
     background-color: var(--primary);
+    box-shadow: 1px 1px 1pxvar(--accent);
 }
-
 
 
 .about-me, .projects {
@@ -62,8 +71,6 @@ header, section, article, aside, aside, footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap:1em;
-    width: 50%;
 }
 
 .projects {
@@ -76,29 +83,38 @@ header, section, article, aside, aside, footer {
 
   .projects h2 {
     padding-top: 20px;
+    border: 1px solid var(--accent);
+    border-radius: 180px;
+    padding: 10px;
+    background-color: var(--primary);
   }
 
 .about-me {
     padding: 1rem;
+    background-image: url(./assets/DSC01255.jpg);
+    background-size:140%;
+    color: var(--accent);
 }
+
+.about-me img {
+    border-radius: 100%;
+    width: 70%;
+    
+}
+
 
 main{
     min-height: 70vh;
+    background-color: var(--background);
 }
 
-footer {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 15vh;
-    padding: 20px;
-
-}
 
 img {
     width: 100%;
     height: auto;
-    transition: box-shadow: 5s ;
+
+    /* add box-shadow transition */
+    transition: 5s ;
     padding: 20px;
 
 }
@@ -111,28 +127,34 @@ input {
     display:flex;
     justify-content: flex-end;
     justify-content: space-between;
+    padding: 5px;
+
+}
+.contact-me a {
+    background-color: var(--accent);
+    padding-left :4px;
+    padding-right: 4px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding:5px;
 }
 
-/* 
-@media screen and (min-width: 992px) {
-    header {
-      width: 75%;
-    }
-  
-    .sections {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
+ 
+@media screen and (min-width: 772px) {
+    .projects {
+      width: 44%;
     }
   }
 
-
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 500px) {
     header {
       width: 75%;
     }
   
-    .sections {
+    /* .sections {
       flex: 0 0 33.333%;
       max-width: 33.333%;
     }
-  } */
+  }  */
