@@ -7,7 +7,7 @@ TODO:Resize the page so that the it fits in different screens and devices */
 
 
  :root{
-    --primary: #8D8741;
+    --primary: #AFA250;
     --secondary:#DAAD86;
     --accent:#BC986A;
     --background:#FBEEC1;
@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    font-family: serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--text);
 }
 
@@ -68,9 +68,11 @@ body {
 
 .about-me p, .about-me h2 {
     background-color: var(--primary);
+    padding: 10px;
 }
 .about-me p {
     padding-top: 20px;
+
 
 }
 
