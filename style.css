@@ -11,6 +11,7 @@ TODO:Resize the page so that the it fits in different screens and devices */
     --secondary:#DAAD86;
     --accent:#BC986A;
     --background:#FBEEC1;
+    --text:black;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     justify-content: space-between;
     min-height: 100vh;
     font-family: serif;
+    color: var(--text);
 }
 
 
@@ -64,8 +66,12 @@ body {
     text-align: center;
 }
 
+.about-me p, .about-me h2 {
+    background-color: var(--primary);
+}
 .about-me p {
     padding-top: 20px;
+
 }
 
 .sections {
@@ -94,7 +100,6 @@ body {
     padding: 1rem;
     background-image: url(./assets/DSC01255.jpg);
     background-size:200%;
-    color: var(--accent);
 }
 
 .about-me img {
