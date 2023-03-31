@@ -4,6 +4,15 @@
 
 For our week 2 homework assignment we were challenged to create a portfolio using the HTML and CSS that we learned in week 1. This was an opportunity for us to show our use of flex-boxes for formating as well as dynamic CSS variables for color design and html links to our projects.
 
+Image showing the website spread out at full disply.
+
+![alt text](./assets/Screenshot%202023-03-28%20at%206.54.51%20PM.png)
+
+Image showing the adjusted size of cards for smallers screens
+
+
+![alt text](./assets/Screenshot%202023-03-28%20at%206.55.03%20PM.png)
+
 ## Credits
 
 W3 schools provided supplemental material to refine my understaning of flexboxes as well as other CSS design elements. Then our course material provided the primary reference material.
